@@ -16,11 +16,12 @@ body {
     text-shadow: 0 0 5px black;
   background-size: 80%;
     background-position: 0;
+    font-family:-webkit-body;
     /* height: 84px; */
 }
 
 .content {
-    margin:8px 19px;
+    margin:8px 30px;
 }
 
 #vixhr {
@@ -63,4 +64,14 @@ body {
 
 .nav-item:not(.wip):hover {
     opacity: 0.6;
+}
+
+.nav-item img {
+    border-radius: 8px;
+    width: 277px;
+}
+
+hr {
+    border: 2px solid #5f05ca;
+    opacity: 0.3;
 }
