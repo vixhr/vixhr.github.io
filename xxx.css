@@ -6,7 +6,7 @@ body {
 
 .header {
     width: 100%;
-    position: absolute;
+    position: sticky;
     top: 0;
     background: url(https://pbs.twimg.com/profile_banners/1038329065772478464/1628081829/1500x500);
     background-position: 0;
@@ -16,4 +16,18 @@ body {
   background-size: 80%;
     background-position: 0;
     /* height: 84px; */
+}
+
+.content {
+    margin:8px 19px;
+}
+
+#vixhr {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 40px;
+    color: #5f43f8;
+    /* text-shadow: 1px 0 0 white, 0 0 5px white; */
 }
