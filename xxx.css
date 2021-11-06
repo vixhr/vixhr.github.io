@@ -1,0 +1,19 @@
+body {
+    background: #191822;
+    color: #413779;
+  margin:0;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: url(https://pbs.twimg.com/profile_banners/1038329065772478464/1628081829/1500x500);
+    background-position: 0;
+    text-align: center;
+    font-size: 43px;
+    text-shadow: 0 0 5px black;
+  background-size: 80%;
+    background-position: 0;
+    /* height: 84px; */
+}
