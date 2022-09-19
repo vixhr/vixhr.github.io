@@ -1,8 +1,17 @@
 body {
-  margin:0;
+  height:90%;
 }
 
-
 .content {
-    margin:8px 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
 }
