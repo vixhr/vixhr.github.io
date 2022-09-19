@@ -1,77 +1,8 @@
 body {
-    background: #191822;
-    color: #413779;
   margin:0;
-    font-family:Noto Sans JP;
 }
 
-.header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background: url(https://pbs.twimg.com/profile_banners/1038329065772478464/1628081829/1500x500);
-    background-position: 0;
-    text-align: center;
-    font-size: 43px;
-    text-shadow: 0 0 5px black;
-  background-size: 80%;
-    background-position: 0;
-    font-family:-webkit-body;
-    /* height: 84px; */
-}
 
 .content {
     margin:8px 30px;
-}
-
-#vixhr {
-    font-size: 50px;
-}
-
-.name {
-    font-size: 40px;
-    color: #5f43f8;
-    /* text-shadow: 1px 0 0 white, 0 0 5px white; */
-}
-
-
-.caption {
-    color: #c595fa;
-    width: 100%;
-    font-size: 29px;
-    background: black;
-    text-decoration: none;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-.nav-item {
-    transition:0.3s all ease;
-    border-radius: 8px;
-    background: black;
-    padding: 3px 5px;
-    width: 277px;
-    height: 343px;
-    overflow: hidden;
-    position: relative;
-}
-
-.nav-item.wip {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.nav-item:not(.wip):hover {
-    opacity: 0.6;
-}
-
-.nav-item img {
-    border-radius: 8px;
-    width: 277px;
-}
-
-hr {
-    border: 2px solid #5f05ca;
-    opacity: 0.3;
 }
