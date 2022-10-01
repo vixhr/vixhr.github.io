@@ -1,17 +1,1 @@
-body {
-  height:90%;
-}
 
-.content {
-    margin: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-iframe {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-}
