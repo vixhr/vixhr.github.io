@@ -1,0 +1,71 @@
+$accent-color: rgb(58 2 84 / 10%);
+
+.content {
+    margin: 150px;
+}
+
+.flex {
+    display: flex;
+    gap: 18px;
+}
+
+.name span {
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.additionalname {
+    opacity: 0;
+    display: none;
+    transition: 0.3s all ease;
+}
+
+.name:hover .additionalname {
+    opacity: 1;
+    display: block;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+}
+
+.tags span {
+    background: $accent-color;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.name {}
+
+.name {
+    display: inline;
+}
+
+blockquote::before {
+    content: "";
+    border-bottom: 2px solid black;
+    width: 2.45em;
+    height: 2px;
+    position: absolute;
+    left: -42px;
+    top: 6px;
+}
+
+blockquote {
+    position: relative;
+}
+
+.spoiler {
+    background: black;
+    color: black;
+}
+
+.spoiler:hover {
+    color: white;
+}
+
+.oshis {
+    display: flex;
+    justify-content: center;
+}
