@@ -1,3 +1,9 @@
+body { 
+	font-family:'Be Vietnam Pro', sans-serif;
+}
+:root {
+	--accent:rgb(58 2 84/10%);
+}
 .content {
 	margin: 150px;
 }
@@ -29,7 +35,7 @@
 }
 
 .tags span {
-	background: rgb(58 2 84/10%);
+	background: var(--accent);
 	border-radius: 5px;
 	padding: 4px;
 }
