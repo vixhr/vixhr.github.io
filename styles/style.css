@@ -168,3 +168,17 @@ html {
 }
 
 .b {margin:5px 0 10px;}
+
+.icon img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+.icon {
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-shadow: 0 0 0 5px #fedbff;
+    width: 150px;
+    height: 150px;
+}
