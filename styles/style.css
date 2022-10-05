@@ -8,6 +8,16 @@ body {
 	margin: 5px 150px;
 }
 
+.content2 {
+    margin: 50px auto;
+    width: 600px;
+    /* justify-content: center; */
+    background: #f6f6f6;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
 .flex {
 	display: flex;
 	gap: 18px;
@@ -178,7 +188,7 @@ html {
 .icon {
     border-radius: 50%;
     border: 5px solid transparent;
-    box-shadow: 0 0 0 5px #fedbff;
+    box-shadow: 0 0 0 5px #c8c8c8;
     width: 150px;
     height: 150px;
 }
