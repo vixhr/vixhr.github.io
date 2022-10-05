@@ -145,3 +145,24 @@ blockquote {
 html {
     box-shadow: 0 0 0 5px inset #efd9ff;
 }
+
+.grid-3 div {
+    min-height: 200px;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.grid-3 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 33% 33% 33%;
+    background: #cbcbcb;
+    padding: 3px;
+    border-radius: 5px;
+    align-items: center;
+}
