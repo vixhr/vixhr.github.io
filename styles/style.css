@@ -224,3 +224,13 @@ ul {
     margin: 0;
     text-align: left;
 }
+
+.subquote {
+    opacity: 0.8;
+    text-align: center;
+    font-size: 90%;
+    background: linear-gradient(to top,#c1ac97 0%,#382622 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-35px);
+}
