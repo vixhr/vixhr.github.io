@@ -212,10 +212,12 @@ html {
 }
 
 mark {
-    background: none;
     font-size: 130%;
     font-weight: bold;
     display: block;
+    background: linear-gradient(to top,#c1ac97 0%,#382622 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 ul {
