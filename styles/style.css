@@ -201,7 +201,7 @@ html {
     transform: translateY(10px);
 }
 
-p#text {
+.text {
     background: rgb(255 255 255 / 90%);
     padding: 53px;
     border-radius:300px 300px 0 0;
