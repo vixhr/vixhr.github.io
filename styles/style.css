@@ -14,7 +14,7 @@ body {
     background: url(https://pbs.twimg.com/media/DESlvN7UMAMxL-k?format=jpg&name=900x900);
     box-shadow: 0rem 0rem 0.875rem 0rem #382622;
     background-size: 100%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 300px 300px 0 0;
 }
 
@@ -198,11 +198,27 @@ html {
     padding: 10px;
     border-radius: 300px 300px 0 0;
     overflow: hidden;
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 
 #text {
-    background: rgb(255 255 255 / 90%);
-    padding: 53px;
+    text-align: center;
+    background: rgb(255 255 255 / 70%);
+    padding: 22px;
     border-radius:300px 300px 0 0;
+    max-height: 480px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+mark {
+    background: none;
+    font-size: 130%;
+    font-weight: bold;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    text-align: left;
 }
