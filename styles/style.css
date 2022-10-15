@@ -1,5 +1,7 @@
-body { 
-	font-family:'Be Vietnam Pro', sans-serif;
+body {
+    height: 100%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: #fef2dc;
 }
 :root {
 	--accent:rgb(58 2 84/10%);
@@ -153,10 +155,6 @@ blockquote {
 
 ::-webkit-scrollbar {
 	display:none;
-}
-
-html {
-    box-shadow: 0 0 0 5px inset #efd9ff;
 }
 
 .grid-3 div {
