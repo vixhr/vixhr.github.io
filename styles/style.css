@@ -180,68 +180,23 @@ blockquote {
 
 .b {margin:5px 0 10px;}
 
-.icon img {
-    border-radius: 50%;
-    width: 150px;
-    height: auto;
-}
-
-.icon {
-    border-radius: 50%;
-    border: 5px solid transparent;
-    box-shadow: 0 0 0 5px #c8c8c8;
-    width: 150px;
-    height: 150px;
-}
-
 .inner {
-    width: 585px;
+    width: 795px;
     display: flex;
     flex-direction: row-reverse;
 }
 
-#text {
-    text-align: center;
-    background: rgb(255 255 255 / 70%);
-    padding: 22px;
-    border-radius:300px 300px 0 0;
-    max-height: 480px;
-    overflow-x: hidden;
-    overflow-y: visible;
-}
-
-mark {
-    font-size: 130%;
-    font-weight: bold;
-    display: block;
-    background: linear-gradient(to top,#c1ac97 0%,#382622 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-ul {
-    margin: 0;
-    text-align: left;
-}
-
-.subquote {
-    opacity: 0.8;
-    text-align: center;
-    font-size: 90%;
-    background: linear-gradient(to top,#c1ac97 0%,#382622 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: translateY(-35px);
-}
-
 .tomoya {
+    transform:translate(171px, -130px);
     z-index: -1;
     position: absolute;
 }
 
 .tomoya img {
+    animation: tomoSway 5s infinite ease;
+    pointer-events: none;
+    user-select: none;
     width: 81%;
-    transform: rotate(8deg) translate(171px, -130px);
 }
 
 .bio, .int, .more, .dni {
