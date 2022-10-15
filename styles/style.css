@@ -215,3 +215,19 @@ blockquote {
         transform: rotate(2deg);
     }
 }
+
+span.big {
+    font-weight: bold;
+    font-size: 125%;
+    text-transform: capitalize;
+}
+
+span.bio {
+    font-size: 80%;
+    color: #524a47;
+    margin-bottom: 15px;
+}
+
+.int, .more, .dni {
+    margin-bottom: 20px;
+}
