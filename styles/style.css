@@ -7,6 +7,9 @@ body {
 .content {
 	margin: 5px 150px;
 }
+.content-3 {
+	margin: 175px;
+}
 
 .content-2 {
     width: 25em;
@@ -194,11 +197,9 @@ html {
 }
 
 .inner {
-    background: rgb(255 255 255 / 50%);
-    padding: 10px;
-    border-radius: 300px 300px 0 0;
-    overflow: hidden;
-    transform: translateY(5px);
+    width: 585px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #text {
@@ -233,4 +234,19 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateY(-35px);
+}
+
+.tomoya {
+    z-index: -1;
+    position: absolute;
+}
+
+.tomoya img {
+    width: 81%;
+    transform: rotate(8deg) translate(171px, -130px);
+}
+
+.bio, .int, .more, .dni {
+    display: block;
+    width: 80%;
 }
