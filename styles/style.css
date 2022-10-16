@@ -191,6 +191,7 @@ blockquote {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
+    transform:translate(-25px);
 }
 
 .tomoya {
