@@ -239,7 +239,11 @@ span.bio {
     margin-bottom: 20px;
 }
 /* Tooltip */
-.tooltip:before,
+.tooltip {
+	display:inline-block;
+	cursor:default;
+}
+
 .tooltip:after {
   position: absolute;
   visibility: hidden;
@@ -248,16 +252,9 @@ span.bio {
   pointer-events: none;
 }
 
-.tooltip:hover:before, .tooltip:hover:after, .tooltip:focus:before, .tooltip:focus:after {
+.tooltip:hover:after,.tooltip:focus:after {
   visibility: visible;
   opacity: 1;
-}
-
-.tooltip:before {
-  z-index: 1001;
-  border: 6px solid transparent;
-  background: transparent;
-  content: "";
 }
 
 .tooltip:after {
@@ -266,32 +263,23 @@ span.bio {
     font-weight: 600;
     z-index: 1000;
     padding: 8px;
-    min-width: 160px;
     background-color: #000;
     color: #fff;
     content: attr(data-tooltip);
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 10px;
+    line-height: 0.6;
 }
 
-.tooltip:before, .tooltip:after {
-  bottom: 100%;
-  left: 50%;
-}
-
-.tooltip:before {
-  margin-left: -6px;
-  margin-bottom: -12px;
-  border-top-color: #000;
-  border-top-color: #000;
+.tooltip:after {
+  bottom: 80%;
 }
 
 /* Horizontally align top/bottom tooltips */
 [data-tooltip]:after, .tooltip:after {
-  margin-left: -80px;
+  margin-left: -55px;
 }
 
-.tooltip:hover:before, .tooltip:hover:after, .tooltip:focus:before, .tooltip:focus:after {
+.tooltip:hover:after, .tooltip:focus:after {
   -webkit-transform: translateY(-12px);
   -moz-transform:    translateY(-12px);
   transform:         translateY(-12px); 
