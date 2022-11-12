@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    /* margin: 36px; */
 }
 
 body::before {
@@ -30,8 +30,34 @@ body::before {
     display: flex;
     width: 100%;
     /* width: 40rem; */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container {
+    /* margin: 64px; */
     /* width: 40rem; */
+}
+
+.headerImg {
+    width: 39.375rem;
+    height: 10.875rem;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    /* padding: 11px; */
+    margin-bottom: 8px;
+}
+
+.headerImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container02 > div {
+    height: 45px;
+}
+
+p {
+    margin: 0;
 }
