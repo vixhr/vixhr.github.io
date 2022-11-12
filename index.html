@@ -8,21 +8,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
   </head>
-<body onload="startTime()">
+<body>
   <script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  m = checkTime(m);
-  document.getElementById('currentTime').innerHTML =  h + ":" + m;
-  setTimeout(startTime, 1000);
+function myClock() {         
+    setTimeout(function() {   
+      const date = new Date();
+      const dateString = date.toLocaleTimeString('en-GB', {hour12: false});
+      const split = dateString.split(":");
+      const hour = parseInt(split[0]);
+      const min = parseInt(split[1]);
+      const period = hour < 12 ? 'AM' : 'PM';
+      const timeOutput = hour + ':' + min + ' ' + period;
+      document.getElementById("currentTime").innerHTML = timeOutput; 
+      myClock();
+    }, 1000)
 }
-
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
+  
+myClock();
 </script>
   <div class="content">
     <div class="container">
