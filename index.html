@@ -17,16 +17,17 @@ function myClock() {
       const split = dateString.split(":");
       const hour = parseInt(split[0]);
       const min = parseInt(split[1]);
+      function checkTime(min) {
+      if (min < 10) {min = "0" + min};  // add zero in front of numbers < 10
+      return min;
+      }
       const period = hour < 12 ? 'AM' : 'PM';
       const timeOutput = hour + ':' + min + ' ' + period;
       document.getElementById("currentTime").innerHTML = timeOutput; 
       myClock();
     }, 1000)
 }
-function checkTime(min) {
-  if (min < 10) {min = "0" + min};  // add zero in front of numbers < 10
-  return min;
-}
+
 myClock();
 </script>
   <div class="content">
