@@ -55,3 +55,19 @@ p {
 option {
     padding: 0!important;
 }
+
+#currentTime {
+    position: relative;
+    cursor: default;
+    margin: 3px 3px 5px 3px;
+    text-align: right;
+}
+
+#currentTime::before {
+    content: "";
+    border-bottom: 1px solid #ffffff4a;
+    width: 88%;
+    height: 11.5px;
+    position: absolute;
+    left: 0;
+}
