@@ -1,6 +1,5 @@
 // clock
 function myClock() {           
-      const date = new Date();
     setTimeout(function() {   
       const date = new Date();
       const dateString = date.toLocaleTimeString('en-GB', {hour12: false});
