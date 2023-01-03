@@ -38,6 +38,8 @@ audio {
   transform:translate(-2px, -2px)
 }
 
+ul {margin:0;}
+
 audio::-webkit-media-controls-current-time-display {
   color: #f1f3f4;
 }
