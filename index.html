@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>vixhr</title>
-    <meta name="title" content="Vixhr">
-  <link rel="stylesheet" href="/styles/izuru.css">
+  <title>♥</title>
+  <meta name="title" content="♥">
+  <meta name="description" content="You don't have to rush, all a weary heart needs is love.">
+
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://site.vixhr.repl.co">
+   <meta property="og:title" content="♥">
+   <meta property="og:description" content="You don't have to rush, all a weary heart needs is love.">
+   <meta property="og:image" content="https://pbs.twimg.com/media/FlfWrGZaUAIg7cq?format=jpg" />
+   <meta property="twitter:card" content="summary_large_image"/>
+   <meta property="twitter:url" content="https://site.vixhr.repl.co">
+  <meta property="twitter:title" content="♥">
+  <meta property="twitter:description" content="You don't have to rush, all a weary heart needs is love.">              
+  <meta property="twitter:image" content="https://pbs.twimg.com/media/FlfWrGZaUAIg7cq?format=jpg">
+  <meta data-rh="true" name="twitter:image:width" content="1280">
+  <meta data-rh="true" name="twitter:image:height" content="720">
+    
+  <link rel="stylesheet" href="/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
   </head>
 <body>
-  <script>
-function myClock() {         
-    setTimeout(function() {   
-      const date = new Date();
-      const dateString = date.toLocaleTimeString('en-GB', {hour12: false});
-      const split = dateString.split(":");
-      const hour = parseInt(split[0]);
-      const min = parseInt(split[1]);
-      function checkTime(min) {
-      if (min < 10) {min = "0" + min};  // add zero in front of numbers < 10
-      return min;
-      }
-      const period = hour < 12 ? 'AM' : 'PM';
-      const timeOutput = hour + ':' + min + ' ' + period;
-      document.getElementById("currentTime").innerHTML = timeOutput; 
-      myClock();
-    }, 1000)
-}
-
-myClock();
-</script>
   <div class="content">
-    <div class="container">
+    <div class="header container">
       <div id="currentTime"></div>
-      <div class="headerImg"><img src="images/mikuHeader1.jpg"></div>
+      <div class="audio"><audio src ="僕らだけのシャングリラ (Lofi Remix  Instrumental).mp3" autoplay loop controls></audio></div>
+      <div class="headerImg"><img src="https://vixhr.github.io/images/mikuHeader1.jpg"></div>
       <div class="container02">
         <div><p>aster. he/him. unlabeled.</p></div>
         <div><label for="pages">select page:</label>
-      <select name="pages" id="pages">
-        <option value="home">home</option>
+      <select name="pages" id="pages" onchange="switchPage()"">
+        <option value="home" selected>home</option>
         <option value="about">about</option>
         <option value="interests">interests</option>
         <option value="contact">contact</option>
        </select></div>
     </div>
+  <div class="container" id="home"></div>
+  <div class="container" id="about">
+      <div>hello, im aster. i'm an admin for the project sekai fandom wiki, where i usually make card pages and do template editing. i wouldn't say i'm very good at coding because i do not know jack about javascript. if you're looking at this on mobile or a different screen size i am so sorry.<br>labels are confusing i just like cute anime characters<br>i genuinely don't know what to put here stream bokura dake no shangri-la</div>
+    </div>
+  <div class="container" id="interests">
+      <div>interests: <mark>blue archive, nijisanji, sutopuri, project sekai</mark>, vocaloid, enstars, persona, okegom, zelda, d4dj<br>oshis: mari, himari, fuuka (blue archive); shu, mysta, petra (2434); root + umaigumi (stpri); kagamine len (kagamine len); noa (d4dj)</div>
+    </div>
+ <div class="container" id="contact">
+      <div id="inner">
+      <div>contact <ul><li><a href="https://twitter.com/iochi_mari">Twitter</a></li><li><a href="https://projectsekai.fandom.com/wiki/User:Vixhr">Fandom</a></li><li><a href="https://open.spotify.com/user/txa2ine7qtlr411kht236kty0?si=4d80a3d9299a4cef">Spotify</a></li><li><a href="https://github.com/vixhr">Github</a></li><li>Discord: Holic#0637</li></ul></div>
+       <div>game IDs <ul><li>switch SW-4757-6124-3217</li><li>pjsekai 165714117024350216</li><li>enstars 6118550731</li><li>d4dj eyMBT777</li><li>blue archive 5891298</li></ul></div>
+    </div>
+ </div>
   </div>
 </body>
 </html>
