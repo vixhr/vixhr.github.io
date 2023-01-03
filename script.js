@@ -1,6 +1,8 @@
 // clock
 function myClock() {           
       const date = new Date();
+    setTimeout(function() {   
+      const date = new Date();
       const dateString = date.toLocaleTimeString('en-GB', {hour12: false});
       const split = dateString.split(":");
       const hour = parseInt(split[0]);
@@ -17,6 +19,8 @@ function myClock() {
       const period = hour < 12 ? 'AM' : 'PM';
       const timeOutput = standardHours(hour) + ':' + checkTime(min) + ' ' + period;
       document.getElementById("currentTime").innerHTML = timeOutput; 
+      myClock();
+    }, 0)
 }
 
 myClock();
