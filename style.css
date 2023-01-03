@@ -1,13 +1,13 @@
-@media only screen and (max-device-width:540px) {
+@media only screen and (max-width:540px) {
     body {font-size:10pt;}
     .container {width:100%!important;padding:10px;}
     .headerImg {width: 100%!important;height: 120px!important;}
     .audio {transform:scale(0.55) translateY(10px)!important;}
 }
-@media only screen and (min-device-width:700px) {
+@media only screen and (min-width:700px) {
     body {font-size:14.5pt;}
 }
-@media only screen and (min-device-width:900px) {
+@media only screen and (min-width:900px) {
     body {font-size:12pt;}
 }
 
