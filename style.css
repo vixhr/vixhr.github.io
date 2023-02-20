@@ -69,7 +69,7 @@ a:hover {color:gray;}
 
 #home { background:transparent;padding:0; }
 
-.inner {
+#inner {
   display:grid;
   grid-template-columns:50% 50%;
 }
